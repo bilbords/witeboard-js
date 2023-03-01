@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/whiteboard.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <title>Web Whiteboard</title>
+  </head>
+  <body>
+    <noscript> You need to enable JavaScript on this site </noscript>
+    <main class="main">
+      <div class="main__canvas-block">
+        <div class="canvas-wrapper">
+          <canvas class="main__canvas"></canvas>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="footer__menu">
+        <div class="footer__main-tools">
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+          <i class="fa fa-floppy-o" aria-hidden="true"></i>
+        </div>
+        <div class="footer__tools">
+          <div class="footer__menu-item brush-item">
+            <i class="fa fa-paint-brush active-button" aria-hidden="true"></i>
+          </div>
+          <div class="footer__menu-item eraser-item">
+            <i class="fa fa-eraser" aria-hidden="true"></i>
+          </div>
+          <div class="footer__menu-item line-width-item">
+            <input
+              type="range"
+              max="100"
+              min="1"
+              class="line-width"
+              value="15"
+            />
+          </div>
+          <div class="footer__menu-item choose-color-item">
+            <input
+              type="color"
+              name="choose-color-input"
+              id="choose-color-1"
+              class="choose-color"
+            />
+          </div>
+        </div>
+        <div class="footer__social-media">
+          <a href="https://github.com/bilbords" class="footer__github-link">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
